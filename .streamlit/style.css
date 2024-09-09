@@ -1,0 +1,88 @@
+/* Custom CSS for 5G Analytics Dashboard - HubSpot Theme */
+
+/* Main layout */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f5f8fa;
+    color: #33475b;
+}
+
+.main {
+    padding: 2rem;
+}
+
+/* Sidebar */
+.sidebar .sidebar-content {
+    background-color: #ff7a59;
+    color: white;
+    padding: 1.5rem;
+}
+
+/* Headers */
+h1, h2, h3 {
+    color: #00a4bd;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+/* Metrics */
+.stMetric {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 1rem;
+}
+
+/* Charts */
+.stPlotlyChart {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 1rem;
+}
+
+/* Buttons and selectboxes */
+.stButton > button, .stSelectbox > div > div {
+    background-color: #ff7a59;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+}
+
+.stButton > button:hover, .stSelectbox > div > div:hover {
+    background-color: #ff8f73;
+}
+
+/* Top navigation bar */
+.top-nav {
+    background-color: #00a4bd;
+    color: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    .main {
+        padding: 1rem;
+    }
+    
+    .stMetric, .stPlotlyChart {
+        padding: 1rem;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.stMetric, .stPlotlyChart {
+    animation: fadeIn 0.5s ease-in-out;
+}
